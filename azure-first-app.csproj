@@ -1,10 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>azure_first_app</RootNamespace>
+    <ApplicationInsightsResourceId>/subscriptions/5a50e634-dca6-4513-b532-2e76cb8e6c95/resourceGroups/az-group-rg/providers/microsoft.insights/components/azure-first-app</ApplicationInsightsResourceId>
+    <UserSecretsId>04deb6e9-40af-4ba8-bb9b-666e5755968b</UserSecretsId>
   </PropertyGroup>
+
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />
+  </ItemGroup>
 
 </Project>
